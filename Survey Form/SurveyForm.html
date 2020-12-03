@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="ss.css" />
+
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">
+            Personal Survey Form
+        </h1>
+
+        <p id="description">
+            This survey is used to gather personal information that would be used for further research.
+        </p>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age (Optional)</label>
+                <input type="number" name="number" id="number" class="form-control" placeholder="Enter your age" min="1" max="200" />
+            </div>
+            <div class="form-group">
+                <label id="country-label" for="country">Country</label>
+                <select name="country" id="dropdown">
+                    <option value="">Select your country</option>
+                    <option value="philippines">Philippines</option>
+                    <option value="japan">Japan</option>
+                    <option value="singapore">Singapore</option>
+                    <option value="korea">Korea</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label id="table-label" for="table">Questionnaire</label>
+                <div class="form-table">
+                    <table>
+                        <tr>
+                            <th rowspan="2">Statements</th>
+                            <th colspan="5">Answer</th>
+                        </tr>
+                        <tr>
+                            <td>Strongly Disagree</td>
+                            <td>Disagree</td>
+                            <td>Agree</td>
+                            <td>Strongly Agree</td>
+                        </tr>
+                        <tr>
+                            <td>Life is easy</td>
+                            <td><input type="radio" id="1" name="q1" value="1" /></td>
+                            <td><input type="radio" id="2" name="q1" value="2" /></td>
+                            <td><input type="radio" id="3" name="q1" value="3" /></td>
+                            <td><input type="radio" id="4" name="q1" value="4" /></td>
+                        </tr>
+                        <tr>
+                            <td>I have self-confidence</td>
+                            <td><input type="radio" id="1" name="q2" value="1" /></td>
+                            <td><input type="radio" id="2" name="q2" value="2" /></td>
+                            <td><input type="radio" id="3" name="q2" value="3" /></td>
+                            <td><input type="radio" id="4" name="q2" value="4" /></td>
+                        </tr>
+                        <tr>
+                            <td>I know what I want to be in the future</td>
+                            <td><input type="radio" id="1" name="q3" value="1" /></td>
+                            <td><input type="radio" id="2" name="q3" value="2" /></td>
+                            <td><input type="radio" id="3" name="q3" value="3" /></td>
+                            <td><input type="radio" id="4" name="q3" value="4" /></td>
+                        </tr>
+                        <tr>
+                            <td>I have my life figured out</td>
+                            <td><input type="radio" id="1" name="q4" value="1" /></td>
+                            <td><input type="radio" id="2" name="q4" value="2" /></td>
+                            <td><input type="radio" id="3" name="q4" value="3" /></td>
+                            <td><input type="radio" id="4" name="q4" value="4" /></td>
+                        </tr>
+                        <tr>
+                            <td>I am happy</td>
+                            <td><input type="radio" id="1" name="q5" value="1" /></td>
+                            <td><input type="radio" id="2" name="q5" value="2" /></td>
+                            <td><input type="radio" id="3" name="q5" value="3" /></td>
+                            <td><input type="radio" id="4" name="q5" value="4" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="form-group">
+
+                <label id="label-checkbox" for="checkbox-id">Select what you have:</label>
+                <div id="checkbox-id" class="form-checkbox">
+                    <p>
+                        <input type="checkbox" id="computer" name="computer" value="computer" />
+                        <label for="computer">Computer</label>
+                        <input type="checkbox" id="laptop" name="laptop" value="laptop" />
+                        <label for="laptop">Laptop</label>
+                        <input type="checkbox" id="cellphone" name="cellphone" value="cellphone" />
+                        <label for="cellphone">Cellphone</label>
+                        <input type="checkbox" id="car" name="car" value="car" />
+                        <label for="car">Car</label>
+                        <input type="checkbox" id="house" name="house" value="house" />
+                        <label for="house">House</label>
+                        <input type="checkbox" id="savings" name="savings" value="savings" />
+                        <label for="savings">Savings</label>
+                    </p>
+                </div>
+                <label for="textarea">Tell me about yourself and your plans for the future.</label>
+                <textarea id="textarea" name="textarea" style="resize:none" required></textarea>
+            </div>
+
+            <div class="submit">
+                <input type="submit" id="submit" value="Submit Your Data" />
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
