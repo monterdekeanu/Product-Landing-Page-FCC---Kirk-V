@@ -1,0 +1,249 @@
+﻿/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #282828;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 800px) {
+    body {
+        position:absolute;
+    }
+}
+#contact {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(115deg, rgba(43,43,43,0.2), rgba(8,8,8,0.5)), url(https://scontent.fceb1-1.fna.fbcdn.net/v/t1.0-9/122436214_1860027407499257_7725464950460379080_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8bfeb9&_nc_ohc=Lbh3Jbw-qdkAX9kOYAD&_nc_ht=scontent.fceb1-1.fna&oh=255793a7b52fc61b06374362c0968a3e&oe=5FEC0D61);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+
+}
+
+
+#contact {
+
+    margin-top: auto;
+    text-align: center;
+    height: 500px;
+    max-height: 500px;
+    padding-top: 250px;
+
+
+}
+
+#contact form label {
+    font-family: 'Old English Text MT';
+    font-size: 60px;
+    color: white;
+}
+
+#contact form input[type="email"] {
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 225px;
+    height: 25px;
+    border-radius: 2rem;
+    border-color: white;
+    background-clip:padding-box;
+    outline: none;
+    text-align: center;
+}
+
+#contact form input[type="submit"] {
+    font-family: 'Segoe UI';
+    margin-top: 80px;
+    width: 140px;
+    height: 55px;
+    border-radius: 2rem;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(43,43,43);
+    border:none;
+    outline:none;
+    
+}
+
+    #contact form input[type="submit"]:hover {
+        color: rgb(43,43,43);
+        background-color: #DADADA;
+        transition-duration: 0.4s;
+    }
+
+    #contact form input[type="submit"]: {
+        color: rgb(43,43,43);
+        background-color: #DADADA;
+        transition-duration: 0.4s;
+    }
+
+
+#header img {
+    margin-top: 8px;
+    height: 34px;
+    width: 300px;
+    margin-left: 20px;
+}
+#header {
+    background-color: #060606;
+    align-items: center;
+    max-height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+#nav-bar {
+    float: right;
+    margin-right: 20px;
+}
+
+
+#nav-bar a {
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#page-container h1{
+    padding-top: 150px;
+    font-family: 'Old English Text MT';
+    font-size: 80px;
+    text-align: center;
+}
+
+#content-container ul {
+    margin-top: 80px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    align-content: center;
+
+}
+
+#content-container li {
+    display: flex;
+}
+.content-format {
+    font-family: Tahoma;
+    text-align: left;
+}
+#content-container img {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+#sample-container iframe{
+    width: 500px;
+    margin: auto;
+}
+
+#sample-container{
+    width: 500px;
+    margin: auto;
+}
+
+
+footer {
+    position: relative;
+}
+footer span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#rates-container {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#rate-box {
+    font-family: 'Segoe UI';
+    text-align: center;
+    margin-left: 20px;
+    width: 260px;
+}
+
+
+
+#rate-box h2{
+    background-color: #DADADA;
+    width: 100%;
+    margin: 0px;
+}
+
+#rate-box ol {
+        list-style: none;
+        text-align: center;
+        margin-left: 0px;
+        padding: 0px;
+        
+}
+
+#rate-box input[type=submit] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI';
+    width: 70px;
+    height: 30px;
+    border-radius: 2rem;
+    color: white;
+    font-size: 12px;
+    background-color: rgb(43,43,43);
+    border:none;
+    outline:none;
+}
+#rate-box input[type=submit]:hover {
+    color: rgb(43,43,43);
+    background-color: #DADADA;
+    transition-duration: 0.4s;
+}
+
+#rate-box p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+@media (max-height:700px) {
+    #page-container h1 {
+        padding-top: 30px;
+    }
+}
