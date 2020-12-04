@@ -1,0 +1,35 @@
+﻿body
+{
+}
+
+#main-doc {
+    font-family: 'Segoe UI';
+}
+
+.main-section {
+    width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.main-section img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.main-section header {
+    font-size: 1.8em;
+}
+
+.main-section p {
+    font-size: 1em;
+}
+
+.main-section ul {
+    font-size: 0.9em;
+    background-color: #F9F9F9;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+
+}
