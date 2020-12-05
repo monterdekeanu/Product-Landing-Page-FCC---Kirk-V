@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,177 +8,186 @@
     <title>Java Technical Documentation</title>
 </head>
 <body>
+    <nav id="navbar">
+        <header id="navbar-title">Java Documentation</header>
+        <a href="#introduction">Introduction</a>
+        <a href="#history">History</a>
+        <a href="#tools">Tool You Will Need</a>
+        <a href="#local_setup">Local Environment Setup</a>
+        <a href="#set_path">Setting Up the Path for Windows</a>
+        <a href="#java_editors">Popular Java Editors</a>
+    </nav>
     <main id="main-doc">
-        <section class="main-section">
-            <header id="introduction">
-                Introduction
-            </header>
-            <img src="https://assets.stickpng.com/thumbs/58480979cef1014c0b5e4901.png" />
-            <p>
-                Java programming language was originally developed by Sun Microsystems which was initiated by James Gosling and released in 1995 as core component of Sun Microsystems' Java platform (Java 1.0 [J2SE]).
-            </p>
+            <section class="main-section">
+                <header id="introduction">
+                    Introduction
+                </header>
+                <img src="https://assets.stickpng.com/thumbs/58480979cef1014c0b5e4901.png" />
+                <p>
+                    Java programming language was originally developed by Sun Microsystems which was initiated by James Gosling and released in 1995 as core component of Sun Microsystems' Java platform (Java 1.0 [J2SE]).
+                </p>
 
-            <p>
-                The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
-            </p>
+                <p>
+                    The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
+                </p>
 
-            <ul>
-                <li>
-                    <p>
-                        <b>Object Oriented</b> − In Java, everything is an Object. Java can be easily extended since it is based on the Object model.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Platform Independent</b> − Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Simple</b> − Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Secure</b> − With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Architecture-neutral</b> − Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Portable</b> − Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Robust</b> − Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Multithreaded</b> − With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Interpreted</b> − Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>High Performance</b> − With the use of Just-In-Time compilers, Java enables high performance.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Distributed</b> − Java is designed for the distributed environment of the internet.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <b>Dynamic</b> − Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
-                    </p>
-                </li>
-            </ul>
-
-        </section>
-        <section class="main-section">
-            <header id="history">
-                History
-            </header>
-            <p>
-                James Gosling initiated Java language project in June 1991 for use in one of his many set-top box projects. The language, initially called ‘Oak’ after an oak tree that stood outside Gosling's office, also went by the name ‘Green’ and ended up later being renamed as Java, from a list of random words.
-            </p>
-            <p>
-                Sun released the first public implementation as Java 1.0 in 1995. It promised <b>Write Once, Run Anywhere (WORA)</b>, providing no-cost run-times on popular platforms.
-            </p>
-            <p>
-                On 13 November, 2006, Sun released much of Java as free and open source software under the terms of the GNU General Public License (GPL).
-            </p>
-            <p>
-                On 8 May, 2007, Sun finished the process, making all of Java's core code free and open-source, aside from a small portion of code to which Sun did not hold the copyright.
-            </p>
-        </section>
-        <section class="main-section">
-            <header id="tools">
-                Tools You Will Need
-            </header>
-            <p>
-                For performing the examples discussed in this tutorial, you will need a Pentium 200-MHz computer with a minimum of 64 MB of RAM (128 MB of RAM recommended).
-            </p>
-
-            <p>
-                You will also need the following softwares −
                 <ul>
                     <li>
-                        Linux 7.1 or Windows xp/7/8 operating system
+                        <p>
+                            <b>Object Oriented</b> − In Java, everything is an Object. Java can be easily extended since it is based on the Object model.
+                        </p>
                     </li>
                     <li>
-                        Java JDK 8
+                        <p>
+                            <b>Platform Independent</b> − Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+                        </p>
                     </li>
                     <li>
-                        Microsoft Notepad or any other text editor
+                        <p>
+                            <b>Simple</b> − Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Secure</b> − With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Architecture-neutral</b> − Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Portable</b> − Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Robust</b> − Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Multithreaded</b> − With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Interpreted</b> − Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>High Performance</b> − With the use of Just-In-Time compilers, Java enables high performance.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Distributed</b> − Java is designed for the distributed environment of the internet.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Dynamic</b> − Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
+                        </p>
                     </li>
                 </ul>
-                This tutorial will provide the necessary skills to create GUI, networking, and web applications using Java.
-            </p>
-        </section>
-        <section class="main-section">
-            <header id="local_setup">
-                Local Environment Setup
-            </header>
-            <p>
-                If you are still willing to set up your environment for Java programming language, then this section guides you on how to download and set up Java on your machine. Following are the steps to set up the environment.
-            </p>
-            <p>
-                Java SE is freely available from the link <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Download Java.</a> You can download a version based on your operating system.
-            </p>
-            <p>
-                Follow the instructions to download Java and run the <b>.exe</b> to install Java on your machine. Once you installed Java on your machine, you will need to set environment variables to point to correct installation directories −
-            </p>
-        </section>
-        <section class="main-section">
-            <header id="set_path">
-                Setting Up the Path for Windows
-            </header>
-            <p>
-                Assuming you have installed Java in c:\Program Files\java\jdk directory −
-                <ul>
-                    <li>
-                        Right-click on 'My Computer' and select 'Properties'.
-                    </li>
-                    <li>
-                        Click the 'Environment variables' button under the 'Advanced' tab.
-                    </li>
-                    <li>
-                        Now, alter the 'Path' variable so that it also contains the path to the Java executable. Example, if the path is currently set to 'C:\WINDOWS\SYSTEM32', then change your path to read 'C:\WINDOWS\SYSTEM32;c:\Program Files\java\jdk\bin'.
-                    </li>
-                </ul>
-            </p>
-        </section>
-        <section class="main-section">
-            <header id="java_editors">
-                Popular Java Editors
-            </header>
-            <p>
-                To write your Java programs, you will need a text editor. There are even more sophisticated IDEs available in the market. But for now, you can consider one of the following −
-                <ul>
-                    <li>
-                        <b>Notepad</b> − On Windows machine, you can use any simple text editor like Notepad (Recommended for this tutorial), TextPad.
-                    </li>
-                    <li>
-                        <b>Netbeans</b> − A Java IDE that is open-source and free which can be downloaded from <a href="https://www.netbeans.org/index.html">Netbeans </a>webpage.
-                    </li>
-                    <li>
-                        <b>Eclipse</b> − A Java IDE developed by the eclipse open-source community and can be downloaded from <a href="https://www.eclipse.org/">Eclipse </a>webpage.
-                    </li>
-                </ul>
-            </p>
-        </section>
+
+            </section>
+            <section class="main-section">
+                <header id="history">
+                    History
+                </header>
+                <p>
+                    James Gosling initiated Java language project in June 1991 for use in one of his many set-top box projects. The language, initially called ‘Oak’ after an oak tree that stood outside Gosling's office, also went by the name ‘Green’ and ended up later being renamed as Java, from a list of random words.
+                </p>
+                <p>
+                    Sun released the first public implementation as Java 1.0 in 1995. It promised <b>Write Once, Run Anywhere (WORA)</b>, providing no-cost run-times on popular platforms.
+                </p>
+                <p>
+                    On 13 November, 2006, Sun released much of Java as free and open source software under the terms of the GNU General Public License (GPL).
+                </p>
+                <p>
+                    On 8 May, 2007, Sun finished the process, making all of Java's core code free and open-source, aside from a small portion of code to which Sun did not hold the copyright.
+                </p>
+            </section>
+            <section class="main-section">
+                <header id="tools">
+                    Tools You Will Need
+                </header>
+                <p>
+                    For performing the examples discussed in this tutorial, you will need a Pentium 200-MHz computer with a minimum of 64 MB of RAM (128 MB of RAM recommended).
+                </p>
+
+                <p>
+                    You will also need the following softwares −
+                    <ul>
+                        <li>
+                            Linux 7.1 or Windows xp/7/8 operating system
+                        </li>
+                        <li>
+                            Java JDK 8
+                        </li>
+                        <li>
+                            Microsoft Notepad or any other text editor
+                        </li>
+                    </ul>
+                    This tutorial will provide the necessary skills to create GUI, networking, and web applications using Java.
+                </p>
+            </section>
+            <section class="main-section">
+                <header id="local_setup">
+                    Local Environment Setup
+                </header>
+                <p>
+                    If you are still willing to set up your environment for Java programming language, then this section guides you on how to download and set up Java on your machine. Following are the steps to set up the environment.
+                </p>
+                <p>
+                    Java SE is freely available from the link <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Download Java.</a> You can download a version based on your operating system.
+                </p>
+                <p>
+                    Follow the instructions to download Java and run the <b>.exe</b> to install Java on your machine. Once you installed Java on your machine, you will need to set environment variables to point to correct installation directories −
+                </p>
+            </section>
+            <section class="main-section">
+                <header id="set_path">
+                    Setting Up the Path for Windows
+                </header>
+                <p>
+                    Assuming you have installed Java in c:\Program Files\java\jdk directory −
+                    <ul>
+                        <li>
+                            Right-click on 'My Computer' and select 'Properties'.
+                        </li>
+                        <li>
+                            Click the 'Environment variables' button under the 'Advanced' tab.
+                        </li>
+                        <li>
+                            Now, alter the 'Path' variable so that it also contains the path to the Java executable. Example, if the path is currently set to 'C:\WINDOWS\SYSTEM32', then change your path to read 'C:\WINDOWS\SYSTEM32;c:\Program Files\java\jdk\bin'.
+                        </li>
+                    </ul>
+                </p>
+            </section>
+            <section class="main-section">
+                <header id="java_editors">
+                    Popular Java Editors
+                </header>
+                <p>
+                    To write your Java programs, you will need a text editor. There are even more sophisticated IDEs available in the market. But for now, you can consider one of the following −
+                    <ul>
+                        <li>
+                            <b>Notepad</b> − On Windows machine, you can use any simple text editor like Notepad (Recommended for this tutorial), TextPad.
+                        </li>
+                        <li>
+                            <b>Netbeans</b> − A Java IDE that is open-source and free which can be downloaded from <a href="https://www.netbeans.org/index.html">Netbeans </a>webpage.
+                        </li>
+                        <li>
+                            <b>Eclipse</b> − A Java IDE developed by the eclipse open-source community and can be downloaded from <a href="https://www.eclipse.org/">Eclipse </a>webpage.
+                        </li>
+                    </ul>
+                </p>
+            </section>
     </main>
 </body>
 </html>
