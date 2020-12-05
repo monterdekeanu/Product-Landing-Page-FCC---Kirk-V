@@ -1,3 +1,9 @@
+@media (width: 812){
+    body{
+        font-size: 1.8em;
+    }
+}
+
 body {
     background-repeat: no-repeat;
     background-size:cover;
