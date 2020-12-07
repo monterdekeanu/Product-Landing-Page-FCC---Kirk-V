@@ -1,0 +1,126 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width:1366px){
+    #top-section {
+        background-size: contain;
+        background-color: #EDEDED;
+        height: 20rem;
+        width: 100%;
+    }
+
+    #navbar ul {
+        list-style-type: none;
+        display: inline-block;
+        flex-direction: row;
+        padding: 0;
+        margin: 0.5rem auto;
+        width: 100%;
+    }
+
+    #navbar ul li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    #navbar ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-align: center;
+        width: 100px;
+        font-family: 'Segoe UI';
+        font-weight: bold;
+    }
+
+    #navbar {
+        display: inline-block;
+        text-align: center;
+        float: none;
+        background-color: black;
+        width: 100%;
+        color: white;
+        height: 2rem;
+    }
+
+
+    .top-content {
+        text-align: center;
+        line-height: 15rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 5rem;
+        height: 100%;
+    }
+
+    .top-content:hover {
+        color: white;
+        transition-duration: 3s;
+        transition-delay: 1s;
+    }
+    #top-section:hover {
+        background: #060606;
+        transition-duration: 3s;
+        transition-delay: 1s;
+    }
+
+    .header-section {
+        background-color: black;
+        max-height: 2rem;
+        color: white;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    header {
+        font-family: 'Segoe UI';
+        font-weight: bold;
+    }
+
+    /*----------- DIVIDER -----------------*/
+
+    .image {
+        width: 5.5rem;
+        height: 7rem;
+    }
+
+    .image:hover {
+        opacity: 0.7;
+        transition-duration: 0.25s;
+    }
+
+    #sample-container {
+        padding-top: 0.25rem;
+        display: inline block;
+        text-align: center;
+    }
+
+    #rates-body {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .rates-content {
+        margin-top: 2rem;
+        margin: 0.2rem;
+        width: 6rem;
+        height: 8rem;
+        background-color: #EDEDED;
+    }
+
+    .rates-content header {
+        background-color: #282828;
+        color: white;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .image-rates {
+        height: 6rem;
+        width: 100%;
+    }
+
+
+}
