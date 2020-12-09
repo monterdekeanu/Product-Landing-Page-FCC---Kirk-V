@@ -1,66 +1,162 @@
-<!DOCTYPE html>
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8" />
-    <title></title>
-    <script async src="https://www.instagram.com/embed.js"></script>
+/* Track */
+::-webkit-scrollbar-track {
+    background: #282828;
+}
 
-</head>
-<body>
-    <div id="welcome-section">
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
 
-        <nav id="navbar">
-            <ul>
-                <li>
-                    <a href="#rates">Rates</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#Contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 
-        <div class="top-content">
-            <h1>magos</h1>
-        </div>
-    </div>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
 
-    <div id="img-section">
-        <header class="header-section">
-            Portfolio
-        </header>
-        <div id="sample-container">
-            <img class="image" src="https://drive.google.com/uc?export=view&id=1LCi0_yqM48UteE48eNdE7K1oLpL6mvfP" />
-            <img class="image" src="https://drive.google.com/uc?export=view&id=17MvhBSyxd-fAH7EuCrzS5sWLQmCzX80y" />
-            <img class="image" src="https://drive.google.com/uc?export=view&id=1IfagLibrNZwIBI8sKVwpsT6-7XC7JCzZ" />
-            <img class="image" src="https://drive.google.com/uc?export=view&id=152OBu_XtMoMMYYmykPqephUnVjZEoTaJ" />
-            <img class="image" src="https://drive.google.com/uc?export=view&id=1iYKLTV2jxTZmmEyYEF9Bmh3s43fv-Zjy" />
-            <img class="image" src="https://drive.google.com/uc?export=view&id=1UncnsN2qnsAal9bIrWUPM49fkK0ywkpb" />
-            <img class="image" src="https://drive.google.com/uc?export=view&id=1sxNvl9q6HLOIxKwETLDMscAiBBgNoLOK" />
-            <img class="image" src="https://drive.google.com/uc?export=view&id=17kRJTHzT1PE0Us3qB7yNBtNmEEUbQ3FD" />
-        </div>
-    </div>
-    <div id="contact-body">
-        <div id="icons">
-            <a href="https://www.facebook.com/agnieszkarosario">
-                <img class="social-media" src="https://assets.stickpng.com/thumbs/58e91965eb97430e819064f5.png" />
-            </a>
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
-            <a href="https://www.instagram.com/art.buddd/">
-                <img class="social-media" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" />
-            </a>
+@media (max-width:1366px){
+    #welcome-section {
+        background-size: contain;
+        background-color: #EDEDED;
+        height: 100vh;
+        width: 100%;
+    }
 
-            <a href="https://twitter.com/doraegiee">
-                <img class="social-media" src="https://i.pinimg.com/originals/04/52/ac/0452ac38302c16481666342d3d532c96.png" />
-            </a>
-        </div>
-    </div>
+    #navbar ul {
+        list-style-type: none;
+        display: inline-block;
+        flex-direction: row;
+        padding: 0;
+        margin: 0.5rem auto;
+        width: 100%;
+    }
 
-</body>
-</html>
+    #navbar ul li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    #navbar ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-align: center;
+        width: 100px;
+        font-family: 'Segoe UI';
+        font-weight: bold;
+    }
+
+    #navbar {
+        display: inline-block;
+        text-align: center;
+        position: fixed;
+        float: none;
+        background-color: black;
+        width: 100%;
+        color: white;
+        height: 2rem;
+    }
+
+
+    .top-content {
+        text-align: center;
+        height: 100vh;
+    }
+
+    .top-content h1{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 6em;
+        width: 100%;
+    }
+
+    .top-content h1:hover {
+        color: white;
+        transition-duration: 3s;
+        transition-delay: 1s;
+    }
+    #welcome-section:hover {
+        background: #060606;
+        transition-duration: 3s;
+        transition-delay: 1s;
+    }
+
+    .header-section {
+        background-color: black;
+        max-height: 2rem;
+        color: white;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    header {
+        font-family: 'Segoe UI';
+        font-weight: bold;
+    }
+
+    /*----------- DIVIDER -----------------*/
+
+    .image {
+        width: 20vh;
+        height: 40vw;
+    }
+
+    .image:hover {
+        opacity: 0.7;
+        transition-duration: 0.25s;
+    }
+
+    #sample-container {
+        padding-top: 0.25rem;
+        display: inline block;
+        text-align: center;
+        margin-top: 2rem;
+        height: 100vh;
+    }
+
+
+    #contact-body {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .social-media {
+        width: 6em;
+        height: 6em;
+
+    }
+
+    #contact-body a {
+        text-decoration: none;
+    }
+
+    #icons {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+}
