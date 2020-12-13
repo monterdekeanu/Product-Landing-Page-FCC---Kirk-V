@@ -1,162 +1,97 @@
-/* width */
-::-webkit-scrollbar {
-    width: 3px;
-}
+<!DOCTYPE html>
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #282828;
-}
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magos Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="nav-list">
+            <li>
+                <a href="#welcome-section" id="about">
+                    About Me
+                </a>
+            </li>
+            <li>
+                <a href="#project-grid" id="projects">
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="#social-media" id="contact">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
+    <section id="welcome-section">
+            <h1>
+                Agnieszka Magos
+            </h1>
+            <h2>
+                I am an artist
+            </h2>
+    </section>
 
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
+    <section id="projects">
+        <h1>
+            These are some of my artworks.
+        </h1>
+        <div id="project-grid">
+            <a href="https://www.instagram.com/p/CCn_4g-lBtX/" class="project-tile">
+                <img class="project-image" src="https://drive.google.com/uc?export=view&id=1Ml0wgckT6riis6PU3gSCtf5BgLlcXoDZ" />
+                <p class="project-title">
+                    Icons
+                </p>
+            </a>
+            <a class="project-tile" href="https://www.instagram.com/p/CCqKB3CFPS0/">
+                <img class="project-image" src="https://drive.google.com/uc?export=view&id=1qVbVAIy8HATsoxDh2BhRyL_KYM7BSCLi" />
+                <p class="project-title">
+                    Bust
+                </p>
+            </a>
+            <a class="project-tile" href="https://www.instagram.com/p/CDSuoq2lI-T/">
+                <img class="project-image" src="https://drive.google.com/uc?export=view&id=1GdmUI94j818KobyfBgeCiBFmwtD26yoJ" />
+                <p class="project-title">
+                    Half-Body
+                </p>
+            </a>
+            <a class="project-tile" href="https://www.instagram.com/p/CCyVRv1FS7t/">
+                <img class="project-image" src="https://drive.google.com/uc?export=view&id=13JDwPI1pHhWwonPLUxqi03sOHQCA83zK" />
+                <p class="project-title">
+                    Full-Body
+                </p>
+            </a>
+        </div>
+    </section>
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
+    <section id="contact-section">
+        <h1>
+            Lets work together!
+        </h1>
 
-body {
-    margin: 0px;
-    padding: 0px;
-}
+        <div id="social-media">
+            <a href="https://www.instagram.com/art.buddd/" target="_blank" class="icon-anchor">
+                <img class="icon" src="https://drive.google.com/uc?export=view&id=1ZSZ0xvNUwy50vRji1e4buL-hrGLuz2ir" />
+                <p>Instagram</p>
+            </a>
+            <a href="https://www.freecodecamp.org/monterdekeanu" id="profile-link" class="icon-anchor" target="_blank">
+                <img class="icon" src="https://drive.google.com/uc?export=view&id=1rRUVAOLMwHt_htqVDW6dZBLFfdsX3EAM" />
+                <p>Facebook</p>
+            </a>
+            <a href="https://twitter.com/doraegiee" target="_blank" class="icon-anchor">
+                <img class="icon" src="https://drive.google.com/uc?export=view&id=1KLdE5UnjiizNhuH5qaiZEcxrid0TQKnF" />
+                <p>Twitter</p>
+            </a>
+        </div>
+    </section>
 
-@media (max-width:1366px){
-    #welcome-section {
-        background-size: contain;
-        background-color: #EDEDED;
-        height: 100vh;
-        width: 100%;
-    }
-
-    #navbar ul {
-        list-style-type: none;
-        display: inline-block;
-        flex-direction: row;
-        padding: 0;
-        margin: 0.5rem auto;
-        width: 100%;
-    }
-
-    #navbar ul li {
-        display: inline-block;
-        text-align: center;
-    }
-
-    #navbar ul li a {
-        text-decoration: none;
-        color: white;
-        display: block;
-        text-align: center;
-        width: 100px;
-        font-family: 'Segoe UI';
-        font-weight: bold;
-    }
-
-    #navbar {
-        display: inline-block;
-        text-align: center;
-        position: fixed;
-        float: none;
-        background-color: black;
-        width: 100%;
-        color: white;
-        height: 2rem;
-    }
-
-
-    .top-content {
-        text-align: center;
-        height: 100vh;
-    }
-
-    .top-content h1{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-        font-size: 6em;
-        width: 100%;
-    }
-
-    .top-content h1:hover {
-        color: white;
-        transition-duration: 3s;
-        transition-delay: 1s;
-    }
-    #welcome-section:hover {
-        background: #060606;
-        transition-duration: 3s;
-        transition-delay: 1s;
-    }
-
-    .header-section {
-        background-color: black;
-        max-height: 2rem;
-        color: white;
-        text-align: center;
-        padding: 0.5rem;
-    }
-
-    header {
-        font-family: 'Segoe UI';
-        font-weight: bold;
-    }
-
-    /*----------- DIVIDER -----------------*/
-
-    .image {
-        width: 20vh;
-        height: 40vw;
-    }
-
-    .image:hover {
-        opacity: 0.7;
-        transition-duration: 0.25s;
-    }
-
-    #sample-container {
-        padding-top: 0.25rem;
-        display: inline block;
-        text-align: center;
-        margin-top: 2rem;
-        height: 100vh;
-    }
-
-
-    #contact-body {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .social-media {
-        width: 6em;
-        height: 6em;
-
-    }
-
-    #contact-body a {
-        text-decoration: none;
-    }
-
-    #icons {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-
-}
+</body>
+</html>
